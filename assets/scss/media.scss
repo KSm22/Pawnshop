@@ -1,0 +1,140 @@
+/*MEDIA*/
+@media only screen and (max-width : 1200px) {
+  .header__contacts{
+    z-index: 10;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    height: 100%;
+    padding: 15px 40px;
+    flex-direction: column;
+
+    background-color: #009846;
+    transform: translateX(100%);
+    transition: all 0.5s;
+  }
+  .header__contacts.active{
+    transform: translateX(0);
+  }
+  .contacts__item{
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .header__btn{
+    display: block;
+  }
+  .header__btn-close{
+    opacity: 1;
+  }
+}
+@media only screen and (max-width : 920px) {
+  .carousel .slick-arrow {
+    opacity: 0;
+  }
+  .deposit{
+    flex-direction: column;
+    &__img{
+     display: flex;
+     margin: 0;
+     wid: 100%;
+     img{
+      padding: 10px;
+      margin: 0;
+      width: 100%;
+     }
+    }
+  }
+  .card__documents{
+    padding: 31px 31px 31px 31px;
+  }
+}
+
+@media only screen and (max-width : 740px) {
+  .slide__wrapper{
+    top: 15%;
+    right: 15vw;
+  }
+
+}
+
+@media only screen and (max-width : 620px) {
+  .slide__wrapper{
+    top: 20%;
+    left: 15px;
+  }
+
+  .slide__title{
+    font-size: 42px;
+  }
+
+  .tabs__item{
+    margin-right: 0.1vw;
+  }
+  .card{
+    &__wrapper{
+      flex-direction: column;
+    }
+    &__features{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__documents{
+      width: 100%;
+      padding: 0;
+    }
+    &__title{
+
+      font-size: 8vw;
+    }
+    &__subtitle{
+      font-size: 5vw;
+    }
+  }
+  .card-technology__header{
+    padding: 15px;
+  }
+  .card-auto__header{
+    padding: 15px;
+  }
+
+  .deposit__subtitle--hidden{
+    max-height: 100px;
+  }
+  .deposit__subtitle-bottom,.read-more-btn{
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width : 533px) {
+  .categories{
+    margin: 50px 15px;
+    justify-content: center;
+
+    transform: translateY(0);
+
+    &__item{
+      margin: 15px 15px;
+    }
+  }
+  .carousel__slide img{
+    min-height: 100vh;
+  }
+  .deposit__img{
+    display: none;
+  }
+  .deposit__title{
+    font-size: 36px;
+  }
+  .deposit__subtitle{
+    font-size: 18px;
+  }
+  .footer__copyright{
+    font-size: 3vw;
+  }
+  .header__contacts{
+    width: 100%;
+    padding: 30px 15px;
+
+  }
+}
